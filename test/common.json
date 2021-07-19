@@ -1,0 +1,7 @@
+{
+  "build": "lambdatest-import-error-min-example",
+  "name": "MyTest",
+  "visual": true,
+  "video": true,
+  "resolution": "1024x768"
+}

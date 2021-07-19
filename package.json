@@ -1,0 +1,44 @@
+{
+  "name": "lb-import-error-min-example",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "test:ci": "cross-env USE_PROTRACTOR=1 protractor protractor.conf.js"
+  },
+  "auto-changelog": {
+    "commitLimit": false
+  },
+  "author": "fohletex",
+  "license": "All rights reserved.",
+  "jest": {
+    "preset": "ts-jest",
+    "setupFiles": [],
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/test/**/*.test.ts"
+    ],
+    "clearMocks": true,
+    "globals": {
+      "window": {}
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@types/selenium-webdriver": "^4.0.13",
+    "@typescript-eslint/eslint-plugin": "^4.26.1",
+    "@typescript-eslint/parser": "^4.26.1",
+    "chromedriver": "^91.0.0",
+    "cross-env": "^7.0.3",
+    "selenium-webdriver": "^4.0.0-beta.4",
+    "dotenv": "^10.0.0",
+    "husky": ">=6",
+    "jest": "^26.6.3",
+    "protractor": "^7.0.0",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.3.2"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
+  }
+}
